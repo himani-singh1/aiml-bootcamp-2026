@@ -1,0 +1,61 @@
+subjects = ["Python", "Math", "AI", "Data"]
+print(subjects)
+print(subjects[0])
+print(subjects[-1])
+college = {
+    "c_name":"gla",
+    "class":"cb",
+    "name" : "himani",
+    "city" :"mathura",
+    "grade" :"a+"
+    }
+college2={"c_name":"gla",
+    "class":"cb",
+    "name" : "aaru",
+    "city" :"mathura",
+     "grade":"b+"     
+    
+}    
+
+print(college.get("a+"))
+marks = 72
+
+if marks>=40:
+  print("Pass")
+else:
+  print("Fail")
+if marks >= 80:
+  print("distinction")
+elif marks>=49 and marks <=79 :
+  print("pass")
+else:
+  print("fail") 
+if marks%2==0 :
+  print("even")
+else:
+  print("odd")
+age = 79
+if age <13:
+  print("child")  
+elif age>13 and age<19:
+  print("teenager")
+else:
+  print("adult")  
+
+students = [
+    {"Name": "aashtha", "City": "Mathura", "Grade": "A+"},
+    {"Name": "himani ", "City": "mathura", "Grade": "A+"},
+    {"Name": "aaru", "City": "agra", "Grade": "b"},
+    {"Name": "avani", "City": "jaipur", "Grade": "A+"},
+    {"Name": "megha", "City": "gwalior", "Grade": "B+"}
+]
+for student in students:
+    print("Student:", students["Name"])
+    print("Marks:", students["Grade"])
+
+    if student["grade"] >= 75:
+        print("Performance: Strong")
+    elif student["grade"] >= 50:
+        print("Performance: Average")
+    else:
+        print("Performance: should be better")
